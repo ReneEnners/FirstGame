@@ -8,5 +8,18 @@ namespace FirstGame.Model
 {
     class Game
     {
+        System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();
+
+        private Game()
+        {
+            watch.Start();
+        }
+
+        private void update()
+        {
+
+        }
     }
+
+   
 }

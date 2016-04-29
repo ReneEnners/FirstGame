@@ -53,6 +53,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\Player.cs" />
     <Compile Include="RenderControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
