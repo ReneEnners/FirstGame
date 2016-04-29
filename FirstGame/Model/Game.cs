@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace FirstGame.Model
 {
     class Game
     {
-        System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch();
+        Stopwatch watch = new Stopwatch();
 
         private Game()
         {

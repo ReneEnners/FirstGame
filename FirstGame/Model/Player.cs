@@ -7,9 +7,17 @@ using System.Threading.Tasks;
 
 namespace FirstGame.Model
 {
-    class Player
+    public class Player
     {
-        public Point Position { get; set; }
+        public PointF Position { get; set; }
+
+        public PointF Velocity { get; set; }
+
+        public Player()
+        {
+            Position = new PointF(0f, 0f);
+            Velocity = new PointF(100f, 100f);
+        }
 
 
     }

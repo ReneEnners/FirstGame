@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace FirstGame.Model
 {
     public partial class RenderControl : UserControl
     {
+        private Stopwatch watch = new Stopwatch();
+
         public RenderControl()
         {
             InitializeComponent();
+            watch.Start();
         }
 
         protected override void OnPaint(PaintEventArgs e)
