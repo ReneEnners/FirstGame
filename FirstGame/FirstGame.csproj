@@ -52,10 +52,11 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\RenderControl.cs">
+    <Compile Include="Model\Game.cs" />
+    <Compile Include="RenderControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Model\RenderControl.Designer.cs">
+    <Compile Include="RenderControl.Designer.cs">
       <DependentUpon>RenderControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -63,7 +64,7 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\RenderControl.resx">
+    <EmbeddedResource Include="RenderControl.resx">
       <DependentUpon>RenderControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

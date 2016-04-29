@@ -17,6 +17,14 @@ namespace FirstGame.Model
             InitializeComponent();
         }
 
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            e.Graphics.Clear(Color.CornflowerBlue);
 
+            using (Brush brush = new SolidBrush(Color.White))
+            {
+                e.Graphics.FillEllipse(brush, new RectangleF(0, 0, 100, 100));
+            }
+        }
     }
 }

@@ -21,5 +21,10 @@ namespace FirstGame
         {
             Close();
         }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            renderControl.Invalidate();
+        }
     }
 }
