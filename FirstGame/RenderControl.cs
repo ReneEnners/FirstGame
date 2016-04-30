@@ -27,8 +27,10 @@ namespace FirstGame.Model
 
             using (Brush brush = new SolidBrush(Color.White))
             {
-                e.Graphics.FillEllipse(brush, new RectangleF(0, 0, 100, 100));
+                e.Graphics.FillEllipse(brush, new RectangleF(x, y, 100, 100));
             }
+
+            watch.Restart();
         }
     }
 }

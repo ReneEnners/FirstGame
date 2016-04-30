@@ -33,8 +33,8 @@
             this.programMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.closeMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.renderControl = new FirstGame.Model.RenderControl();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.renderControl = new FirstGame.Model.RenderControl();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,12 @@
             this.statusStrip.TabIndex = 1;
             this.statusStrip.Text = "statusStrip";
             // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Interval = 25;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // renderControl
             // 
             this.renderControl.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -82,11 +88,6 @@
             this.renderControl.Name = "renderControl";
             this.renderControl.Size = new System.Drawing.Size(800, 439);
             this.renderControl.TabIndex = 2;
-            // 
-            // timer
-            // 
-            this.timer.Enabled = true;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // mainForm
             // 
@@ -97,7 +98,7 @@
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "mainForm";
             this.Text = "FirstGame";
             this.menuStrip.ResumeLayout(false);

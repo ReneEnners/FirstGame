@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstGame.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,11 @@ namespace FirstGame
 {
     public partial class mainForm : Form
     {
+        private Game game = new Game();
+
         public mainForm()
         {
+            game.PlaygroundSize = new Size(renderControl.ClientSize);
             InitializeComponent();
         }
 
@@ -24,6 +28,7 @@ namespace FirstGame
 
         private void timer_Tick(object sender, EventArgs e)
         {
+            game.update();
             renderControl.Invalidate();
         }
     }
